@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: gray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FF0000;
+}
+nav{
+    padding: 1rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    
+}
+.menu i{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.left,.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.delivery,.pickup{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #1C1816;
+    padding: 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delivery{
+    border: 2px solid red;
+}
+.bucket{
+    position: relative;
+    cursor: pointer;
+
+}
+.bucket h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+.right button{
+    background-color: red;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.front{
+    background-image: url('https://www.kfcpakistan.com/images/98f788d0-c114-11ee-a3ee-43791878213d-995x356_desktop_image-2024-02-01151430.jpg');
+    height: 70vh;
+}
+.reorder button{
+    width: 40%;
+    margin: 1rem auto;
+    padding: 0.3rem;
+    background-color:#FF0000;
+    display: block;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* explore menue */
+
+.explore{
+    width: 70%;
+    margin: auto;
+    padding: 5rem;
+}
+.round-cards{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.explore h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.explore hr{
+    width: 10%;
+    background-color: #FF0000;
+    height: 3px;
+    border: none;
+}
+.e-card{
+    background-color: #1C1816;
+    border-radius: 50% 50% 10px 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 1s;
+}
+.e-card h5{
+    font-size: 1rem;
+    
+}
+.e-card hr{
+    width: 30%;
+}
+.e-card:hover{
+    transform: translateY(-20px);
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+}
+
+/* selling section strats */
+
+.selling{
+    width: 70%;
+    margin: auto;
+    
+   
+    
+}
+.selling h2{
+    text-transform: uppercase;
+}
+.selling hr{
+    width: 10%;
+    background-color: #FF0000;
+    height: 3px;
+    border: none;
+}
+.selling-cards{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+   
+   
+}
+.s-card{
+    background-color: #1C1816;
+    padding: 0 0 0 1rem;
+}
+.price{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 33% 51%, 0 0);
+    background-color: #FF0000;
+    text-align: right;
+    width: 35%;
+    margin-left: auto;
+    margin-top: 0.5rem;
+}
+.dots{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+}
+.red-box{
+    width: 20px;
+    height: 30px;
+    background-color: #FF0000;
+}
+/* deals cards starts */
+.deals{
+    width: 70%;
+    margin: 4rem auto;
+
+}
+
+.deal-cards{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+   
+}
+.deal-card{
+    background: #1C1816;
+    padding: 0 0 1rem 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+.deal-card img{
+    margin-top: -2rem;
+}
+.deal-image{
+    overflow: hidden;
+}
+.deal-img{
+    transition: all 1s;
+}
+.deal-card:hover .deal-img{
+    scale: 1.2;
+}
+.deal-card .bi-heart{
+    color: #FF0000;
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.deal-title{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.deal-desc{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.deal-price{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.add-button button{
+    background-color: #FF0000;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    margin-bottom: -2rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+.add-button button:hover{
+    background-color: white;
+    color: #FF0000;
+}
+
+.deals h2{
+    text-transform: uppercase;
+}
+.deals hr{
+    width: 10%;
+    background-color: #FF0000;
+    height: 3px;
+    border: none;
+}
+.store{
+    width: 70%;
+    margin: auto;
+}
+.store-upper{
+    display: flex;
+   border: 2px solid red;
+}
+.store-upper img{
+    border-radius: 10px;
+}
+.store-lower{
+    display: flex;
+    margin-top: 1rem;
+}
+.store-lower-right{
+    background-color: #1C1816;
+    width: 70%;
+}
+.footer{
+    background-color: #1C1816;
+    height: 50%;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 3rem;
+}
+.row1-right{
+    gap: 1.5rem;
+    display: flex;
+    font-size: 1.5rem;
+    
+
+}
+.row2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    align-items: center;
+}
+ .links1 ul li a{
+   text-decoration: none;
+   list-style-type: none;
+   font-size: 1.2rem;
+   color: white;
+  display: block;
+  
+   
+   
+}
